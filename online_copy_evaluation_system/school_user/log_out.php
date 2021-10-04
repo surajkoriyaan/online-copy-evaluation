@@ -1,0 +1,9 @@
+<?php 
+  session_start();
+  if(isset($_POST["log_out"]))
+  {
+  session_unset();
+  session_destroy();
+  header('location:user_login.php');
+  }
+  ?>
